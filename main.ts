@@ -34,5 +34,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     pins.servoWritePin(AnalogPin.P1, 90)
     pins.servoWritePin(AnalogPin.P2, 90)
 })
+input.setSoundThreshold(SoundThreshold.Loud, 255)
 pins.servoWritePin(AnalogPin.P1, 90)
 pins.servoWritePin(AnalogPin.P2, 90)
