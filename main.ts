@@ -1,3 +1,11 @@
+input.onSound(DetectedSound.Loud, function () {
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 0)
+    pins.servoWritePin(AnalogPin.P2, 0)
+    basic.pause(1000)
+    pins.servoWritePin(AnalogPin.P1, 90)
+    pins.servoWritePin(AnalogPin.P2, 90)
+})
 input.onButtonPressed(Button.A, function () {
     basic.pause(500)
     pins.servoWritePin(AnalogPin.P1, 180)
@@ -22,3 +30,5 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     pins.servoWritePin(AnalogPin.P1, 90)
     pins.servoWritePin(AnalogPin.P2, 90)
 })
+pins.servoWritePin(AnalogPin.P1, 90)
+pins.servoWritePin(AnalogPin.P2, 90)
