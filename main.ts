@@ -24,6 +24,7 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     Affichage.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
     Affichage.setPixelColor(4, neopixel.colors(NeoPixelColors.White))
+    Affichage.show()
     basic.pause(500)
     pins.servoWritePin(AnalogPin.P1, 0)
     pins.servoWritePin(AnalogPin.P2, 180)
